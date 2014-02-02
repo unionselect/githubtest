@@ -1,0 +1,6 @@
+{"No":"ORR56",
+"Subject":"로그 위조가 발생할 수 있다",
+"Level":"Low",
+"Description":"로그에 사용자의 입력을 받을 경우, 필터링되지 않은 값을 입력하도록 허용하면 로그 기록이 위조될 수 있다.",
+"Vulncode":"log.info(\"invalid command: \" + cmd);",
+"Secucode":"log.info(\"invalid command: \" + cmd.replaceAll(\"\\n\", \"_\"));"}
